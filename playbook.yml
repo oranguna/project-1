@@ -1,0 +1,15 @@
+- name: Application Deployment
+  hosts: ubuntu, redhat, centos
+  become: true
+  roles:
+    - install_sqlite
+    - install_flask
+    - copy_app
+  tasks:
+    - name: Start Flask App
+      shell: |
+        cd /opt/flask-app
+        python3 -m venv venv
+        source venv/bin/activate
+        venv/bin/pip3 install -r requirements.txt
+        venv/bin/python3 app.py > /dev/null 2>&1 &

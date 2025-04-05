@@ -1,0 +1,25 @@
+Terminals for Visual Studio code
+
+
+1. Install Git with Bash:  https://git-scm.com/download/win
+
+2.Install the ubuntu for windows 10 configuration: https://msdn.microsoft.com/en-us/commandline/wsl/about
+
+
+3. Once installed you have the posibility of using these 3 terminals.
+
+         configuring the Terminal: File > Prefrence > Settings
+
+        Search for settings: terminal.integrated.shell.windows
+
+
+{  
+   //Terminal Configurations
+
+   //Powershell Configuration
+   "terminal.integrated.shell.windows": "C:\\WINDOWS\\Sysnative\\WindowsPowershell\\v1.0\\powershell.exe"
+
+   //GIT bash Configuration
+   //"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe"   
+        
+          
